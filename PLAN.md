@@ -10,8 +10,10 @@ Lifeline is a health-monitoring and automatic emergency-response PWA. The produc
 - Pure detection engine (sustained-critical + hysteresis) and fall/jolt detector.
 - Demo mode simulator with scenario chips. Stub data lives in `src/lib/fixtures.ts`.
 
-## 2. Core BLE parsers + tests
+## 2. Core BLE parsers + tests (in progress)
 `packages/core`-style module (`src/core/ble/`): Heart Rate 0x2A37 (8/16-bit, contact bits, RR → RMSSD), PLX 0x2A5F/0x2A5E, BP 0x2A35/0x2A36, Glucose 0x2A18/0x2A34 + RACP, Thermometer 0x2A1C, Battery, Device Info. IEEE-11073 SFLOAT/FLOAT decoders. Vitest with byte fixtures. Tests for detection, fall detector and staleness.
+
+Status: parser primitives and a passing BLE-focused test suite are now in place in `src/core/ble`, with the project built and verified.
 
 ## 3. Device adapters + Devices page (`/devices`)
 `DeviceAdapter` interface; StandardBleAdapter (Web Bluetooth) with reconnect/backoff, `getDevices()`, multi-device; MotionAdapter extracted from `useMotion`; DemoAdapter extracted from `VitalsEngine`. Pairing UI with Scanning → Receiving → Signal lost states, unsupported-browser detection, watch broadcast guide. BLE mock harness for CI.

@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/workspaces/lifelinebyagrvdr/src/routes/__root.tsx", children: ["/", "/contacts", "/monitor"], css: ["/assets/index-DARDx916.css"], preloads: ["/assets/index-B3skR0Y0.js"], scripts: [{ attrs: { type: "module", async: true, src: "/assets/index-B3skR0Y0.js" } }] }, "/": { filePath: "/workspaces/lifelinebyagrvdr/src/routes/index.tsx", children: void 0, preloads: ["/assets/index-CYdMQpYZ.js", "/assets/wind-BGBYiipy.js"] }, "/contacts": { filePath: "/workspaces/lifelinebyagrvdr/src/routes/contacts.tsx", children: void 0, preloads: ["/assets/contacts-Ty6tI2DL.js"] }, "/monitor": { filePath: "/workspaces/lifelinebyagrvdr/src/routes/monitor.tsx", children: void 0, preloads: ["/assets/monitor-5Lragkdn.js", "/assets/wind-BGBYiipy.js"] } } });
+export {
+  tsrStartManifest
+};
